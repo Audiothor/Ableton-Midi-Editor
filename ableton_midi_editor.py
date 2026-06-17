@@ -40,6 +40,9 @@ class AbletonMidiApp(ctk.CTk):
         self.export_btn = ctk.CTkButton(self.sidebar, text="Régénérer et Exporter", command=self.export_project, state="disabled", fg_color="#28a745", hover_color="#218838")
         self.export_btn.grid(row=4, column=0, padx=20, pady=(40, 10))
         
+        self.version_label = ctk.CTkLabel(self.sidebar, text="v1.0.0", font=ctk.CTkFont(size=10), text_color="gray")
+        self.version_label.grid(row=6, column=0, padx=20, pady=10, sticky="s")
+        
         # --- Zone Principale ---
         self.main_frame = ctk.CTkFrame(self, fg_color="transparent")
         self.main_frame.grid(row=0, column=1, sticky="nsew", padx=20, pady=20)
