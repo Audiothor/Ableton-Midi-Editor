@@ -15,7 +15,7 @@ Cette application de bureau autonome, développée en Python (via `CustomTkinter
 
 2. Lancez l'application :
    ```bash
-   python app.py
+   python ableton_midi_editor.py
    ```
 
 ## Workflow d'Utilisation
@@ -33,7 +33,7 @@ Pour distribuer cette application sous forme de fichier exécutable sans nécess
 
 ```bash
 pip install pyinstaller
-pyinstaller --noconsole --onefile --windowed app.py
+pyinstaller --noconsole --onefile --windowed ableton_midi_editor.py
 ```
 
 L'exécutable généré se trouvera dans le dossier `dist/`.
